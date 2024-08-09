@@ -37,6 +37,10 @@ jobs:
       - run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - run:
           hugo --baseURL https://${REPO_OWNER}.github.io/${REPO_NAME} --minify
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
