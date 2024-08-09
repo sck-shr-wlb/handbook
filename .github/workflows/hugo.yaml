@@ -34,7 +34,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
 
-      - run: npm ci
+      - run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - run:
           hugo --baseURL https://${REPO_OWNER}.github.io/${REPO_NAME} --minify
 
