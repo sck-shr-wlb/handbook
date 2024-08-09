@@ -4,8 +4,8 @@ title: Goldydocs
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
 # Language settings
-contentDir: content/en
-defaultContentLanguage: en
+contentDir: content/th
+defaultContentLanguage: th
 defaultContentLanguageInSubdir: false
 # Useful when translating.
 enableMissingTranslationPlaceholders: true
@@ -46,14 +46,15 @@ imaging:
 languages:
   en:
     languageName: English
-    title: Goldydocs
+    contentDir: content/en
+    title: The SCK-SHR-WLB Handbook
     params:
       description: A Docsy example site
   # cSpell:disable
   th:
     languageName: ไทย
     contentDir: content/th
-    title: Goldydocs
+    title: The SCK-SHR-WLB Handbook
     params:
       description: ตัวอย่าง
       time_format_default: 02.01.2006
@@ -137,8 +138,8 @@ params:
 
   copyright:
     authors:
-      Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
-    from_year: 2018
+      SCK - SHR - WLB All Rights Reserved
+    from_year: 2013
 
   # User interface configuration
   ui:
@@ -186,10 +187,6 @@ params:
         url: https://example.org/twitter
         icon: fab fa-twitter
         desc: Follow us on Twitter to get the latest news!
-      - name: Stack Overflow
-        url: https://example.org/stack
-        icon: fab fa-stack-overflow
-        desc: Practical questions and curated answers
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: GitHub
