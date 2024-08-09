@@ -1,6 +1,7 @@
 ---
 title: Company
 linkTitle: Company
+draft: true
 menu:
   main:
     name: Company
